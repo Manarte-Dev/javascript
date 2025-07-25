@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Dom</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .principal{
+            border: solid 2px red;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 11px 20px 10px rgba(116, 1, 1, 0.363);
+            width: 200px;
+
+            display: block;
+            justify-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <h1>Estudo de Dom</h1>
+        <p>Veremos o resultado</p>
+        <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+        <div>Clique aqui!</div>
+    </div>
+    
+    <script>
+       var e = window.document.querySelector('h1')
+       e.style.color = 'red'
+    </script>
+</body>
+</html>
