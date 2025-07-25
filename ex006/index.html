@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos Dom</0title>
-        <style>
-            body{
-                background-color: black;
-            }
-        </style>
+    <title>Eventos Dom</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        div#area{
+            width: 300px;
+            height: 300px;
+
+            justify-self: center;
+            background: gray;
+            align-content: center;
+            text-align: center;
+            border-radius: 200px;
+        }
+    </style>
 </head>
 <body>
     <div id="area">
-        <h1>Interaja</h1>
+        <h1>Interaja Comigo</h1>
     </div>
-    
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clique)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+
+        function clique(){
+        a.innerText = 'Clicou'
+        
+        }
+        function entrar(){
+            a.innerText = 'Está na Area'
+            a.style.background = 'blue'
+        }
+        function sair(){
+            a.innerText ='Saiu'
+            a.style.background ='gray'
+        }
+    </script>
+
 </body>
 </html>
