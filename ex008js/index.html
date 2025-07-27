@@ -28,11 +28,10 @@
             var txtv = document.querySelector('input#txtvel')
             var res = document.querySelector('div#res')
             var vel = Number(txtv.value)
-            res.innerHTML = `Sua velociade é de ${vel}`
-            if (vel>60) {
-                res.innerHTML = `Voce foi multado o limite é 60`
-                
-            }
+            res.innerHTML = `Sua velociade é de ${vel} <strong>Km/h</strong>`
+                if (vel>60) {
+            res.innerHTML = `Voce foi <strong>Multado</strong> o limite é 60`
+                 }
             res.innerHTML +=` <p>Dirija sempre com cinto de seguranca</p>`
         }
     </script>
