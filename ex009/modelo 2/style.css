@@ -30,8 +30,9 @@ div#msg{
 img{
     display: flex;
     justify-self: center;
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
     background-size: contain;
     border-radius: 200px;
+    padding: 20px;
 }
